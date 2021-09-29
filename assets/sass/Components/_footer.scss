@@ -1,0 +1,53 @@
+
+.footer{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    &__logo{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 10rem;
+        height: 10rem;
+        border-radius: 10rem;
+        border: 2px solid $color-1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &::before{
+            content: "";
+            width: 100rem;
+            height: 2px;
+            background-color: $color-1;
+            top: 50%;
+            left: 100%;
+            position: absolute;
+        }
+        &::after{
+            content: "";
+            width: 100rem;
+            height: 2px;
+            background-color: $color-1;
+            top: 50%;
+            right: 100%;
+            position: absolute;
+        }
+    }
+    h5{
+        position: absolute;
+        top: 68%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .copyright{
+        font-size: 1rem;
+        text-align: center;
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

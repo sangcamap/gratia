@@ -1,0 +1,39 @@
+
+@mixin italic-grey-text {
+    font-family: 'Crimson text';
+    font-weight: 500;
+    font-style: italic;
+    font-size: 2.4rem;
+    color: $color-3;
+}
+
+@mixin uppercase-gold-text {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: $color-2;
+    font-weight: 500;
+}
+
+@mixin heading-with-bg {
+        width: 59rem;
+        height: 19rem;
+        background: url('../images/Gratia.png');
+        position: absolute;
+        left: 50%;
+        top: 5rem;
+        transform: translateX(-50%);
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        h3{
+            text-transform: uppercase;
+            font-size: 4rem;
+            font-weight: 600;
+        }
+        p{
+            margin-top: 4rem;
+            @include italic-grey-text;
+        }
+}

@@ -1,0 +1,74 @@
+.perfection{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+    .heading{
+        @include heading-with-bg;
+    }
+    &__list{
+        margin-left: 10px;
+        top: 54rem;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &--item{
+            width: 60rem;
+            height: 42rem;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            hr{
+                background-color: $color-2;
+                color: $color-2;
+                border-width:0;
+                border: none;
+                height: 3px;
+                margin: 2rem 0 2rem 0;
+            }
+            h4{
+                font-size: 4rem;
+                text-transform: uppercase;
+                font-weight: 700;
+                color: $color-2;
+            }
+            p{
+                @include italic-grey-text;
+                font-size: 2.4rem;
+                color: #fff;
+            }
+            &:nth-child(1){
+                background: linear-gradient(rgba(12, 9, 39, 0.5),rgba(12, 9, 39, 0.5)),url('../images/Photo-1.png') center /cover;
+            }
+            &:nth-child(3){
+                background: linear-gradient(rgba(12, 9, 39, 0.5),rgba(12, 9, 39, 0.5)),url('../images/Photo-3.png') center /cover;
+            }
+            &:nth-child(2){
+                width: 50rem;
+                height: 62rem;
+                background: url('../images/Photo-2.png') center /cover;
+                margin: 0 3rem 0 3rem;
+                h4{
+                    margin-top: 40rem;
+                    color: #000;
+                }
+                p{
+                    margin-top: 2rem;
+                    color: $color-3;
+                }
+            }
+        }
+    }
+    a{
+        position: absolute;
+        bottom: 1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        @include uppercase-gold-text;
+    }
+}

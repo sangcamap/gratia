@@ -1,0 +1,30 @@
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    padding: 1.8rem 4rem;
+    background-color: #151b28;
+    box-sizing: border-box;
+    &__logo{
+        align-items: center;
+        span{
+            margin-left: 1rem;
+            font-size: 2.2rem;
+        }
+
+    }
+    &__list{
+        align-items: center;
+        ul{
+            font-size: 2rem;
+            display: flex;
+            li{
+                margin-left: 3.4rem;
+            }
+        }
+    }
+}

@@ -64,6 +64,55 @@ table {
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  padding: 1.8rem 4rem;
+  background-color: #151b28;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navigation__logo {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation__logo span {
+  margin-left: 1rem;
+  font-size: 2.2rem;
+}
+
+.navigation__list {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation__list ul {
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation__list ul li {
+  margin-left: 3.4rem;
 }
 
 .top {
@@ -76,7 +125,129 @@ html {
   position: relative;
 }
 
-.top .navigation {
+.slider {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.slider__center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.slider .btn {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: block;
+}
+
+.slider .btn__left {
+  left: 3rem;
+}
+
+.slider .btn__right {
+  right: 3rem;
+}
+
+.slider .btn__bottom {
+  left: 50%;
+  top: 90rem;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  z-index: 2;
+}
+
+.slider button {
+  position: absolute;
+  right: 10rem;
+  bottom: 9rem;
+  padding: 2rem 4rem;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid #8c919e;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #D89B64;
+  font-weight: 500;
+}
+
+.slider__number {
+  position: absolute;
+  color: #fff;
+  left: 10rem;
+  bottom: 9rem;
+}
+
+.slider__number ul li {
+  font-size: 2.4rem;
+  width: 8rem;
+  margin-bottom: 5rem;
+  line-height: 4rem;
+}
+
+.slider__number .is-active {
+  color: #D89B64;
+  border-bottom: 2px solid #D89B64;
+}
+
+.perfection {
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+.perfection .heading {
+  width: 59rem;
+  height: 19rem;
+  background: url("../images/Gratia.png");
+  position: absolute;
+  left: 50%;
+  top: 5rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.perfection .heading h3 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.perfection .heading p {
+  margin-top: 4rem;
+  font-family: 'Crimson text';
+  font-weight: 500;
+  font-style: italic;
+  font-size: 2.4rem;
+  color: #8c919e;
+}
+
+.perfection__list {
+  margin-left: 10px;
+  top: 54rem;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,77 +257,344 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #fff;
 }
 
-.top .navigation__logo span {
-  margin-left: 1rem;
-  font-size: 2.2rem;
-}
-
-.top .navigation__list ul {
-  font-size: 2rem;
+.perfection__list--item {
+  width: 60rem;
+  height: 42rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.top .navigation__list ul li {
-  margin-left: 3.4rem;
+.perfection__list--item hr {
+  background-color: #D89B64;
+  color: #D89B64;
+  border-width: 0;
+  border: none;
+  height: 3px;
+  margin: 2rem 0 2rem 0;
 }
 
-.top .slider__center {
+.perfection__list--item h4 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #D89B64;
+}
+
+.perfection__list--item p {
+  font-family: 'Crimson text';
+  font-weight: 500;
+  font-style: italic;
+  font-size: 2.4rem;
+  color: #8c919e;
+  font-size: 2.4rem;
+  color: #fff;
+}
+
+.perfection__list--item:nth-child(1) {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 9, 39, 0.5)), to(rgba(12, 9, 39, 0.5))), url("../images/Photo-1.png") center/cover;
+  background: linear-gradient(rgba(12, 9, 39, 0.5), rgba(12, 9, 39, 0.5)), url("../images/Photo-1.png") center/cover;
+}
+
+.perfection__list--item:nth-child(3) {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 9, 39, 0.5)), to(rgba(12, 9, 39, 0.5))), url("../images/Photo-3.png") center/cover;
+  background: linear-gradient(rgba(12, 9, 39, 0.5), rgba(12, 9, 39, 0.5)), url("../images/Photo-3.png") center/cover;
+}
+
+.perfection__list--item:nth-child(2) {
+  width: 50rem;
+  height: 62rem;
+  background: url("../images/Photo-2.png") center/cover;
+  margin: 0 3rem 0 3rem;
+}
+
+.perfection__list--item:nth-child(2) h4 {
+  margin-top: 40rem;
+  color: #000;
+}
+
+.perfection__list--item:nth-child(2) p {
+  margin-top: 2rem;
+  color: #8c919e;
+}
+
+.perfection a {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #D89B64;
+  font-weight: 500;
+}
+
+.details {
+  height: 70rem;
+  width: 101%;
+  margin-left: -10px;
+  position: relative;
+  background: url(../images/Details.png) center/cover;
+}
+
+.details .box {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  width: 70rem;
+  height: 43rem;
+  background-color: #fff;
+  padding: 4rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.top .slider .btn {
+.details .box .box__content {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8c919e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.details .box .box__content h3 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.details .box .box__content p {
+  font-family: 'Crimson text';
+  font-weight: 500;
+  font-style: italic;
+  font-size: 2.4rem;
+  color: #8c919e;
+  margin-bottom: 3rem;
+}
+
+.details .box .box__content a {
+  margin: 0 auto;
+  width: 40rem;
+  padding: 2rem 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #D89B64;
+  font-weight: 500;
+  font-size: 2rem;
+  border: 2px solid #eedbc9;
+}
+
+.hwreach {
+  width: 100%;
+  height: 64rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+.hwreach .heading {
+  width: 59rem;
+  height: 19rem;
+  background: url("../images/Gratia.png");
+  position: absolute;
+  left: 50%;
+  top: 5rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hwreach .heading h3 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.hwreach .heading p {
+  margin-top: 4rem;
+  font-family: 'Crimson text';
+  font-weight: 500;
+  font-style: italic;
+  font-size: 2.4rem;
+  color: #8c919e;
+}
+
+.hwreach__list {
+  margin-left: 10px;
+  top: 54rem;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hwreach__list--item {
+  width: 55rem;
+  height: 28rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 0 2px 3px #c3c3c3;
+          box-shadow: 0 0 2px 3px #c3c3c3;
+}
+
+.hwreach__list--item:nth-child(1) {
+  background: url("../images/Diffrent_locations.png") center/cover;
+}
+
+.hwreach__list--item:nth-child(2) {
+  background: url("../images/Fresh_Products.png") center/cover;
+  width: 50rem;
+  height: 30rem;
+  margin: 4rem;
+}
+
+.hwreach__list--item:nth-child(3) {
+  background: url("../images/The_best_from_the_beggining.png") center/cover;
+}
+
+.hwreach__list--item h4 {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #D89B64;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+}
+
+.hwreach__list--item p {
+  font-family: 'Crimson text';
+  font-weight: 500;
+  font-style: italic;
+  font-size: 2.4rem;
+  color: #8c919e;
+}
+
+.footer {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+}
+
+.footer__logo {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 10rem;
+  height: 10rem;
+  border-radius: 10rem;
+  border: 2px solid #eedbc9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.top .slider .btn__left {
-  left: 3rem;
-}
-
-.top .slider .btn__right {
-  right: 3rem;
-}
-
-.top .slider button {
+.footer__logo::before {
+  content: "";
+  width: 100rem;
+  height: 2px;
+  background-color: #eedbc9;
+  top: 50%;
+  left: 100%;
   position: absolute;
-  right: 10rem;
-  bottom: 9rem;
-  text-transform: uppercase;
+}
+
+.footer__logo::after {
+  content: "";
+  width: 100rem;
+  height: 2px;
+  background-color: #eedbc9;
+  top: 50%;
+  right: 100%;
+  position: absolute;
+}
+
+.footer h5 {
+  position: absolute;
+  top: 68%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   font-size: 2rem;
-  padding: 2rem 4rem;
-  border-radius: 4px;
-  background-color: transparent;
-  border: 1px solid #8c919e;
-  color: #b28156;
+  font-weight: 600;
 }
 
-.top .slider__number {
+.footer .copyright {
+  font-size: 1rem;
+  text-align: center;
   position: absolute;
-  color: #fff;
-  left: 10rem;
-  bottom: 9rem;
-}
-
-.top .slider__number ul li {
-  font-size: 2.4rem;
-  width: 8rem;
-  margin-bottom: 5rem;
-  line-height: 4rem;
-}
-
-.top .slider__number .is-active {
-  color: #b28156;
-  border-bottom: 2px solid #b28156;
+  bottom: 2rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 /*# sourceMappingURL=style.css.map */

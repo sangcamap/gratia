@@ -1,89 +1,15 @@
-
-@import './Base/typography';
+// -------------------------------------#Abstract
 @import './Abstracts/variables';
+@import './Abstracts/mixin';
+// -------------------------------------#Base
+@import './Base/typography';
 @import './Base/base';
 
-
-.top{
-    box-sizing: border-box;
-    width: 100vw;
-    height: 100vh;
-    padding: 6.6rem 9rem;
-    background: url('../images/top-bg.png')  no-repeat center /cover;
-    position: relative;
-
-    .navigation{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: #fff;
-        &__logo{
-            span{
-                margin-left: 1rem;
-                font-size: 2.2rem;
-            }
-    
-        }
-        &__list{
-            ul{
-                font-size: 2rem;
-                display: flex;
-                li{
-                    margin-left: 3.4rem;
-                }
-            }
-        }
-    }
-
-    .slider{
-        &__center{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-        }
-        .btn{
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            &__left{
-                left: 3rem;
-            }
-            &__right{
-                right: 3rem;
-            }
-        }
-        button{
-            position: absolute;
-            right: 10rem;
-            bottom: 9rem;
-            text-transform: uppercase;
-            font-size: 2rem;
-            padding: 2rem 4rem;
-            border-radius: 4px;
-            background-color: transparent;
-            border: 1px solid $color-3;
-            color: $color-2;
-        }
-        &__number{
-            position: absolute;
-            color: #fff;
-            left: 10rem;
-            bottom: 9rem;
-            ul{
-                li{
-                    font-size: 2.4rem;
-                    width: 8rem;
-                    margin-bottom: 5rem;
-                    line-height: 4rem;
-                }
-            }
-            .is-active{
-                color: $color-2;
-                border-bottom: 2px solid $color-2;
-            }
-        }
-    }
-}
-
+// -------------------------------------#Component
+@import './Components/navigation';
+@import './Components/top';
+@import './Components/perfection';
+@import './Components/details';
+@import './Components/hwreach';
+@import './Components/footer';
 
