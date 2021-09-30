@@ -14,4 +14,85 @@
 @import './Components/footer';
 @import './Components/menu';
 
+.contact{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+    .heading{
+        @include heading-with-bg;
+        top: 10rem;
+    }
+    &__form{
+        
+        width: 130rem;
+        position: absolute;
+        top: 34rem;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        gap: 4rem;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,0);
+        text-transform: uppercase;
+        &--item{
+            width: auto;
+            border: 0;
+            position: relative;
+            height: 7rem;
+            
+            font-weight: 600;
+            font-size: 1.8rem;
+            line-height: 2.4rem;
+
+            // box-shadow: 0 0 95px #000000;
+
+            label{
+                position: absolute;
+                color: #000;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+            input, textarea{
+                border: 1px solid #c3c3c3;
+                width: 100%;
+                height: 100%;
+                padding-left: 2rem;
+                &:focus~label,
+                &:valid~label
+                {
+                    color: red;
+                    transform: translateY(-50rem);
+                }
+            }
+            &:nth-child(6), &:nth-child(8){
+                grid-column: 1 / 4;
+            }
+            &:nth-child(7), &:nth-child(9){
+                grid-column: 4 / 6;
+            }
+            &:nth-child(10){
+                grid-column: 1 / 6;
+                height: 24rem;
+            }
+            &:nth-child(11){
+                grid-column: 1 / 6;
+                button{
+                    width: 100%;
+                    height: 100%;
+                    text-transform: uppercase;
+                    border: 0;
+                    background-color: #151B28;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.message label{
+    color: #c3c3c3;
+}
 

@@ -91,6 +91,7 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   top: 0;
+  font-weight: 500;
 }
 
 .navigation__logo {
@@ -602,6 +603,11 @@ a {
           transform: translateX(-50%);
 }
 
+.footer a {
+  color: #D89B64;
+  font-size: 1.2rem;
+}
+
 .menu {
   width: 100%;
   height: 150vh;
@@ -813,5 +819,140 @@ a {
   font-size: 80px;
   color: white;
   cursor: pointer;
+}
+
+.contact {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact .heading {
+  width: 59rem;
+  height: 19rem;
+  background: url("../images/Gratia.png");
+  position: absolute;
+  left: 50%;
+  top: 5rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 10rem;
+}
+
+.contact .heading h3 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.contact .heading p {
+  margin-top: 4rem;
+  font-family: 'Crimson text';
+  font-weight: 500;
+  font-style: italic;
+  font-size: 2.4rem;
+  color: #8c919e;
+}
+
+.contact__form {
+  width: 130rem;
+  position: absolute;
+  top: 34rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto;
+  gap: 4rem;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  text-transform: uppercase;
+}
+
+.contact__form--item {
+  width: auto;
+  border: 0;
+  position: relative;
+  height: 7rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
+
+.contact__form--item label {
+  position: absolute;
+  color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.contact__form--item input, .contact__form--item textarea {
+  border: 1px solid #c3c3c3;
+  width: 100%;
+  height: 100%;
+  padding-left: 2rem;
+}
+
+.contact__form--item input:focus ~ label,
+.contact__form--item input:valid ~ label, .contact__form--item textarea:focus ~ label,
+.contact__form--item textarea:valid ~ label {
+  color: red;
+  -webkit-transform: translateY(-50rem);
+          transform: translateY(-50rem);
+}
+
+.contact__form--item:nth-child(6), .contact__form--item:nth-child(8) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
+}
+
+.contact__form--item:nth-child(7), .contact__form--item:nth-child(9) {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-column: 4 / 6;
+}
+
+.contact__form--item:nth-child(10) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1 / 6;
+  height: 24rem;
+}
+
+.contact__form--item:nth-child(11) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1 / 6;
+}
+
+.contact__form--item:nth-child(11) button {
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  border: 0;
+  background-color: #151B28;
+  color: #fff;
+}
+
+.message label {
+  color: #c3c3c3;
 }
 /*# sourceMappingURL=style.css.map */
