@@ -11,12 +11,14 @@
     <div class="wrapper">
         <div class="navigation">
             <div class="navigation__logo">
-                <img src="../../images/Warstwa_2.png"></img>
-                <span>Gratia</span>
+                <a href="../../../index.html">
+                    <img src="../../images/Warstwa_2.png"></img>
+                    <span>Gratia</span>
+                </a>
             </div>
             <div class="navigation__list">
                 <ul>
-                    <li>About</li>
+                    <li><a href="../../../index.html">About</a></li>
                     <li>Menu</li>
                     <li>Gallery</li>
                     <li>Contact</li>
@@ -28,34 +30,58 @@
                 <h3>Menu</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
             </div>
+            <div class="item__info" id="fullimgbox">
+                <div class="item__info--box">
+                    <div class="row">
+                        <div class="col--left">
+                            <img src="../../images/grid-1.png" id="fullimg">
+                        </div>
+                        <div class="col--right">
+                            <h3>Lorem ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <hr>
+                            <div class="components">
+                                <h4>Components</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, quam magnam enim in nam hic nisi repellendus perspiciatis!</p>
+                            </div>
+                            <hr>
+                            <div class="price">
+                                <h5>25$</h5>
+                                <p>Total cost</p>
+                            </div>
+                        </div>
+                        <span onclick="closeFullimg()">X</span>
+                    </div>
+                </div>
+            </div>
             <div class="grid">
                 <div class="grid__item">
-                    <img src="../../images/grid-1.png" alt="">
+                    <img src="../../images/grid-1.png" alt="" onclick="openFullimg(this.src)">
                     <h4>Main dishes</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div class="grid__item">
-                    <img src="../../images/grid-2.png" alt="">
+                    <img src="../../images/grid-2.png" alt="" onclick="openFullimg(this.src)">
                     <h4>Soups</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div class="grid__item">
-                    <img src="../../images/grid-3.png" alt="">
+                    <img src="../../images/grid-3.png" alt="" onclick="openFullimg(this.src)">
                     <h4>Hamburgers</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div class="grid__item">
-                    <img src="../../images/grid-4.png" alt="">
+                    <img src="../../images/grid-4.png" alt="" onclick="openFullimg(this.src)">
                     <h4>Desserts</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div class="grid__item">
-                    <img src="../../images/grid-5.png" alt="">
+                    <img src="../../images/grid-5.png" alt="" onclick="openFullimg(this.src)">
                     <h4>Barbecue</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div class="grid__item">
-                    <img src="../../images/grid-6.png" alt="">
+                    <img src="../../images/grid-6.png" alt="" onclick="openFullimg(this.src)" >
                     <h4>Salads</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
@@ -71,6 +97,8 @@
                 <p>Converted by <a href="https://github.com/sangcamap" target="_blank">sangcamap</a></p>
             </div>
         </div>
+
+        <script src="../../../app.js"></script>
     </div>
 </body>
 </html>

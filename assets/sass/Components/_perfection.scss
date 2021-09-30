@@ -1,17 +1,16 @@
 .perfection{
     width: 100vw;
-    height: 100vh;
+    height: 110rem;
     box-sizing: border-box;
     position: relative;
     .heading{
         @include heading-with-bg;
+        top: 6rem;
     }
     &__list{
-        margin-left: 10px;
-        top: 54rem;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%,-50%);
+        width: 100%;
+        height: 120rem;
+        margin: 0 auto 20rem auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -66,7 +65,7 @@
     }
     a{
         position: absolute;
-        bottom: 1.5rem;
+        bottom: 3rem;
         left: 50%;
         transform: translateX(-50%);
         @include uppercase-gold-text;
