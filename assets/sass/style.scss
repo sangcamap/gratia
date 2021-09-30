@@ -40,14 +40,15 @@
             border: 0;
             position: relative;
             height: 7rem;
-            
+            background: transparent;
+            box-sizing: border-box;
             font-weight: 600;
             font-size: 1.8rem;
             line-height: 2.4rem;
-
-            // box-shadow: 0 0 95px #000000;
+            border: 1px solid #c3c3c3;
 
             label{
+                border: none;
                 position: absolute;
                 color: #000;
                 position: absolute;
@@ -56,10 +57,12 @@
                 transform: translate(-50%,-50%);
             }
             input, textarea{
-                border: 1px solid #c3c3c3;
+                box-sizing: border-box;
+                border: none;
                 width: 100%;
                 height: 100%;
-                padding-left: 2rem;
+                padding: 2rem;
+                background: transparent;
                 &:focus~label,
                 &:valid~label
                 {
@@ -86,6 +89,7 @@
                     border: 0;
                     background-color: #151B28;
                     color: #fff;
+                    font-size: 2.4rem;
                 }
             }
         }
@@ -95,4 +99,10 @@
 .message label{
     color: #c3c3c3;
 }
-
+.prepare{
+    background-color: #000;
+    width: 100%;
+    label{
+        color: $color-2;
+    }
+}
