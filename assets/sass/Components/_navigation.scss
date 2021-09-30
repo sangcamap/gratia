@@ -4,11 +4,12 @@
     align-items: center;
     color: #fff;
     position: fixed;
-    z-index: 99;
+    z-index: 10;
     width: 100%;
     padding: 1.8rem 4rem;
     background-color: #151b28;
     box-sizing: border-box;
+    top: 0;
     &__logo{
         align-items: center;
         span{

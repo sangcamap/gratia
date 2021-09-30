@@ -79,12 +79,13 @@ html {
           align-items: center;
   color: #fff;
   position: fixed;
-  z-index: 99;
+  z-index: 10;
   width: 100%;
   padding: 1.8rem 4rem;
   background-color: #151b28;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  top: 0;
 }
 
 .navigation__logo {
@@ -596,5 +597,113 @@ html {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.menu {
+  width: 100%;
+  height: 150vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu .heading {
+  width: 59rem;
+  height: 19rem;
+  background: url("../images/Gratia.png");
+  position: absolute;
+  left: 50%;
+  top: 5rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 14rem;
+}
+
+.menu .heading h3 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.menu .heading p {
+  margin-top: 4rem;
+  font-family: 'Crimson text';
+  font-weight: 500;
+  font-style: italic;
+  font-size: 2.4rem;
+  color: #8c919e;
+}
+
+.menu .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  gap: 10rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 40rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.menu .grid__item {
+  position: relative;
+  width: 42rem;
+  height: 50rem;
+  background-color: white;
+  -webkit-box-shadow: 0 0 0.5rem grey;
+          box-shadow: 0 0 0.5rem grey;
+  margin-left: auto;
+  text-align: center;
+}
+
+.menu .grid__item img {
+  width: 100%;
+  height: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu .grid__item h4 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: absolute;
+  bottom: 10rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.menu .grid__item p {
+  font-family: 'Crimson text';
+  font-weight: 500;
+  font-style: italic;
+  font-size: 2.4rem;
+  color: #8c919e;
+  position: absolute;
+  bottom: 5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 1.8rem;
 }
 /*# sourceMappingURL=style.css.map */
