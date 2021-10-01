@@ -72,6 +72,10 @@ a {
   color: #fff;
 }
 
+.list--active {
+  color: #D89B64 !important;
+}
+
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
